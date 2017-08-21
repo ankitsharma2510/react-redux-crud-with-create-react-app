@@ -1,0 +1,1 @@
+This project is a simple react-redux based CRUD application.

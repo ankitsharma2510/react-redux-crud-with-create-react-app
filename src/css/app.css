@@ -1,0 +1,77 @@
+.imgsize{
+    margin-left: 87px;
+    width: 100px;
+    height: 100px;
+}
+.header {
+    font-size: 0px;
+}
+.panel-size{
+    width: 303px;
+    margin: auto;
+}
+.padding-top-50{
+    padding-top: 50px;
+}
+.login{
+    margin-top: 5px !important;
+    margin-bottom:5px !important; 
+    font-size: 20px;
+}
+.login-form-text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.12rem;
+}
+.userImg{
+    left: -15px;
+    font-size: 38px !important;
+    top: 3px;
+}
+.body{
+    margin-bottom: 25px;
+}
+.mt0{
+    margin-top: 0px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.w100{
+    width: 100%;
+}
+.roleButton{
+        height: 33px;
+    width: 170px;
+    font-size: 15px;
+    line-height: 35px;
+    margin-left: 10px;
+}
+.dropdown-content.active{
+    width: 170px;
+    position: absolute;
+    top: 181.375px;
+    left: 605.203px !important;
+    display: block;
+    opacity: 1;
+}
+/*.material-icons.left.user {
+    margin-top:15px;
+     font-size: 39px
+}*/
+/*.active{
+    color: red;
+}
+.input-field label{
+    top: 10px;
+    left: 86px;
+}
+.input-field label:not(.label-icon).active{
+    top:15px;
+}
+.btn.dropdown-button{
+    height: 25px;
+    font-size:12px;
+    line-height: 25px;
+    margin-left: 20px;
+}*/
