@@ -11,7 +11,7 @@ export class App extends React.Component{
 	 render(){
 			return <LoginComponent/>;
 	}
-}  
+}
 
 class LoginComponent extends React.Component{
 
@@ -36,21 +36,22 @@ class LoginComponent extends React.Component{
         //  such as method, headers, cache, mode etc.
         // })
         console.log(this.state.employeeLoginDetail);
-	    fetch('http://localhost:8080/authenticate', {
-            method: 'post',
-            headers : {
-                'Content-Type':'application/json',
-                'Accept': 'application/json'
-                      },
-            body: JSON.stringify(this.state.employeeLoginDetail)
-        }).then(function(response) {
-            return response.json();
-             })
-        .then(function(data) {
-            console.log("=======>>>",data);
-        });
+		    fetch('http://localhost:8080/authenticate', {
+	            method: 'post',
+	            headers : {
+	                'Content-Type':'application/json',
+	                'Accept': 'application/json'
+	                      },
+	            body: JSON.stringify(this.state.employeeLoginDetail)
+	        }).then(function(response) {
+	            return response.json();
+	             })
+	        .then(function(data) {
+	            console.log("=======>>>",data);
+	        });
 	 }
 	getValue(e,param){
+
         this.state.employeeLoginDetail[param] = e.target.value;
          this.forceUpdate();
      }
@@ -72,12 +73,12 @@ class LoginComponent extends React.Component{
 					<div className="body">
                         <div className="mt0 input-field">
                             <i className="material-icons right prefix userImg">person_outline</i>
-                            <input id="icon_prefix3" type="email" className="validate" onChange ={(e) => this.getValue(e,'employeeLoginId')}/>
+                            <input id="icon_prefix3" type="email" className="validate" onChange ={() => this.getValue('employeeLoginId')}/>
                             <label htmlFor="icon_prefix3" className="">Email-id</label>
                         </div>
                         <div className="mt0 input-field">
                             <i className="material-icons right prefix userImg">lock_open</i>
-                            <input id="password" type="password" className="validate" onChange ={(e) => this.getValue(e,'password')} />
+                            <input id="password" type="password" className="validate" onChange ={() => this.getValue('password')} />
                             <label htmlFor="password" className="">Password</label>
                         </div>
                         <div className="mt0 ml10 ">
